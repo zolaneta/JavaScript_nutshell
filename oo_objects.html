@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+    <script type="text/javascript">
+
+
+        // constructor function  // put the script tag in the head
+
+function person(name, age) {  //creating a constructor
+    this.name = name;
+    this.age = age;
+
+}
+var aneta = new person("Aneta Eames", 30);   //creating an instance of an object
+var edziu = new person("Edwin Eames", 30);
+
+
+
+    </script>
+</head>
+
+
+<body>
+
+<script type="text/javascript">
+
+// in the body
+
+document.write(aneta.name);
+
+
+// OBJECT INITIALIZERS when you create only one or two objects
+
+aneta = {name:'Aneta Zolkiewicz', age:23};
+document.write(aneta.name + 'is cool!')
+
+</script>
+
+</body>
+</html>
