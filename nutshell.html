@@ -114,9 +114,41 @@ while(x<10){
 
 
 
+// ARRAYS
+
+var people = new Array("Aneta", "Edziu", "Ilona" );
+
+document.write(people[0]);
 
 
+// different way to create an array
 
+var things = new Array(3);
+
+things[0] = "jersy shore";
+things[1] = "cape code";
+things[2] = "providence";
+
+
+// creating an empty array
+
+var stuff = new Array();
+
+stuff[0] = "heooo";
+stuff[1] = "booooo";
+
+
+// array properties - array.lenght     var newaray = firstarray.concat(lastarray)
+
+// JOIN - convert and array to a string
+var string1 =  things.join(" - ");    //joins the list into a string and sparates it with -
+
+
+// POP removes the last element
+
+document.write(things[2] + "<br />");
+
+things.pop();   //removes the last element of the list things
 
 
 
