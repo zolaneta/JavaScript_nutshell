@@ -8,13 +8,28 @@
 
         // constructor function  // put the script tag in the head
 
-function person(name, age) {  //creating a constructor
-    this.name = name;
-    this.age = age;
+    function person(name, age) {  //creating a constructor
+        this.name = name;
+        this.age = age;
+        this.yearsUntilRetire = yearsLeft;  // no need for (), it tells the program that this method is part of the object
 
-}
-var aneta = new person("Aneta Eames", 30);   //creating an instance of an object
-var edziu = new person("Edwin Eames", 30);
+    }
+
+    function yearsLeft(){   //creating method
+        var numYears = 65 - this.age;
+        return numYears;
+    }
+
+
+
+    var aneta = new person("Aneta Eames", 30);   //creating an instance of an object
+    var edziu = new person("Edwin Eames", 30);
+
+
+    document.write(aneta.yearsUntilRetire());  //add the () here!
+    document.write(edziu.yearsUntilRetire());
+
+
 
 
 
